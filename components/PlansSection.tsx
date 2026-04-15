@@ -60,7 +60,7 @@ export default function PlansSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <RevealOnScroll className="text-center mb-20">
-          <span className="text-[#8A2BE2] text-sm uppercase tracking-widest font-medium">
+          <span className="text-[#A855F7] text-sm uppercase tracking-widest font-medium drop-shadow-sm">
             Escolha seu Plano
           </span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 tracking-tight">
@@ -91,7 +91,7 @@ export default function PlansSection() {
 
               {/* Plan Icon */}
               <div className="w-12 h-12 rounded-xl bg-[#8A2BE2]/10 flex items-center justify-center mb-6">
-                <plan.icon className="w-6 h-6 text-[#8A2BE2]" />
+                <plan.icon className="w-6 h-6 text-[#C084FC]" />
               </div>
 
               {/* Plan Name */}
@@ -117,7 +117,7 @@ export default function PlansSection() {
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-[#8A2BE2]" />
+                      <Check className="w-3 h-3 text-[#C084FC]" />
                     </div>
                     <span className="text-white/70 text-sm">{feature}</span>
                   </li>
@@ -148,7 +148,7 @@ export default function PlansSection() {
           <div className="glass-card p-8 md:p-12 max-w-4xl mx-auto">
             <div className="text-center mb-10">
               <div className="w-16 h-16 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-[#8A2BE2]" />
+                <Users className="w-8 h-8 text-[#C084FC]" />
               </div>
               <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
                 Indique e Ganhe
@@ -165,13 +165,13 @@ export default function PlansSection() {
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="w-12 h-12 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center mx-auto mb-4">
-                  <Percent className="w-6 h-6 text-[#8A2BE2]" />
+                  <Percent className="w-6 h-6 text-[#C084FC]" />
                 </div>
                 <h4 className="font-display text-xl font-semibold text-white mb-2">
                   Indique 1 Amigo
                 </h4>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Ganhe <span className="text-[#8A2BE2] font-semibold">50% de desconto</span> no mês em que seu amigo entrar.
+                  Ganhe <span className="text-[#C084FC] font-semibold">50% de desconto</span> no mês em que seu amigo entrar.
                 </p>
               </motion.div>
 
@@ -187,7 +187,7 @@ export default function PlansSection() {
                   Indique 2 Amigos
                 </h4>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Ganhe <span className="text-[#8A2BE2] font-semibold">1 MÊS GRÁTIS</span> quando 2 amigos entrarem no mesmo mês.
+                  Ganhe <span className="text-[#C084FC] font-semibold">1 MÊS GRÁTIS</span> quando 2 amigos entrarem no mesmo mês.
                 </p>
               </motion.div>
             </div>

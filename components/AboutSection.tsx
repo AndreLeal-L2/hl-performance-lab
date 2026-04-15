@@ -45,7 +45,7 @@ export default function AboutSection() {
           {/* Left Content */}
           <div>
             <RevealOnScroll>
-              <span className="text-[#8A2BE2] text-sm uppercase tracking-widest font-medium">
+              <span className="text-[#A855F7] text-sm uppercase tracking-widest font-medium drop-shadow-sm">
                 Sobre o Método
               </span>
               <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mt-4 tracking-tight leading-tight">
@@ -88,7 +88,7 @@ export default function AboutSection() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="w-12 h-12 rounded-xl bg-[#8A2BE2]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8A2BE2]/20 transition-colors">
-                    <item.icon className="w-6 h-6 text-[#8A2BE2]" />
+                    <item.icon className="w-6 h-6 text-[#C084FC]" />
                   </div>
                   <div>
                     <h3 className="font-display text-xl font-semibold text-white mb-2">

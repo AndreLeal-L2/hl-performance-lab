@@ -124,7 +124,7 @@ export default function Footer() {
               href="https://arara-web.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[#8A2BE2] hover:text-[#A855F7] transition-colors underline underline-offset-2"
+              className="text-[#C084FC] hover:text-[#E9D5FF] transition-colors underline underline-offset-2"
             >
               AraraWeb
             </a>

@@ -31,7 +31,7 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <RevealOnScroll className="text-center mb-20">
-          <span className="text-[#8A2BE2] text-sm uppercase tracking-widest font-medium">
+          <span className="text-[#A855F7] text-sm uppercase tracking-widest font-medium drop-shadow-sm">
             Histórias Reais
           </span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 tracking-tight">
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
               >
                 {/* Quote Icon */}
                 <div className="w-10 h-10 rounded-full bg-[#8A2BE2]/10 flex items-center justify-center mb-6">
-                  <Quote className="w-5 h-5 text-[#8A2BE2]" />
+                  <Quote className="w-5 h-5 text-[#C084FC]" />
                 </div>
 
                 {/* Quote Text */}
@@ -71,7 +71,7 @@ export default function TestimonialsSection() {
                   
                   {/* Result Badge */}
                   <div className="px-3 py-1 rounded-full bg-[#8A2BE2]/10 border border-[#8A2BE2]/20">
-                    <span className="text-xs text-[#8A2BE2] font-medium">
+                    <span className="text-xs text-[#C084FC] font-medium">
                       {testimonial.result}
                     </span>
                   </div>
