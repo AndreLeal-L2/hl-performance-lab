@@ -49,8 +49,8 @@ export default function TestimonialsSection() {
                 transition={{ duration: 0.3 }}
               >
                 {/* Quote Icon */}
-                <div className="w-10 h-10 rounded-full bg-[#8A2BE2]/10 flex items-center justify-center mb-6">
-                  <Quote className="w-5 h-5 text-[#C084FC]" />
+                <div className="w-10 h-10 rounded-full bg-[#8A2BE2] flex items-center justify-center mb-6">
+                  <Quote className="w-5 h-5 text-white" />
                 </div>
 
                 {/* Quote Text */}

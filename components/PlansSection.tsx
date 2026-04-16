@@ -90,8 +90,8 @@ export default function PlansSection() {
               )}
 
               {/* Plan Icon */}
-              <div className="w-12 h-12 rounded-xl bg-[#8A2BE2]/10 flex items-center justify-center mb-6">
-                <plan.icon className="w-6 h-6 text-[#C084FC]" />
+              <div className="w-12 h-12 rounded-xl bg-[#8A2BE2] flex items-center justify-center mb-6">
+                <plan.icon className="w-6 h-6 text-white" />
               </div>
 
               {/* Plan Name */}
@@ -116,8 +116,8 @@ export default function PlansSection() {
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3 h-3 text-[#C084FC]" />
+                    <div className="w-5 h-5 rounded-full bg-[#8A2BE2] flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-white" />
                     </div>
                     <span className="text-white/70 text-sm">{feature}</span>
                   </li>
@@ -147,8 +147,8 @@ export default function PlansSection() {
         <RevealOnScroll delay={0.5} className="mt-20">
           <div className="glass-card p-8 md:p-12 max-w-4xl mx-auto">
             <div className="text-center mb-10">
-              <div className="w-16 h-16 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center mx-auto mb-6">
-                <Users className="w-8 h-8 text-[#C084FC]" />
+              <div className="w-16 h-16 rounded-full bg-[#8A2BE2] flex items-center justify-center mx-auto mb-6">
+                <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
                 Indique e Ganhe
@@ -164,8 +164,8 @@ export default function PlansSection() {
                 className="text-center p-6 rounded-2xl bg-white/5 border border-white/10"
                 whileHover={{ scale: 1.02 }}
               >
-                <div className="w-12 h-12 rounded-full bg-[#8A2BE2]/20 flex items-center justify-center mx-auto mb-4">
-                  <Percent className="w-6 h-6 text-[#C084FC]" />
+                <div className="w-12 h-12 rounded-full bg-[#8A2BE2] flex items-center justify-center mx-auto mb-4">
+                  <Percent className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="font-display text-xl font-semibold text-white mb-2">
                   Indique 1 Amigo

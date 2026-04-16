@@ -87,8 +87,8 @@ export default function AboutSection() {
                   whileHover={{ x: 8 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#8A2BE2]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#8A2BE2]/20 transition-colors">
-                    <item.icon className="w-6 h-6 text-[#C084FC]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#8A2BE2] flex items-center justify-center flex-shrink-0 group-hover:bg-[#7C3AED] transition-colors">
+                    <item.icon className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-display text-xl font-semibold text-white mb-2">
