@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
-export const whatsappNumber = "351912185665";
+export const whatsappNumber = "351928042048";
 
 export function getWhatsAppUrl(planName?: string) {
   let message = "Olá! Gostaria de saber mais sobre os planos da HL Performance Lab.";

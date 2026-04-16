@@ -27,7 +27,7 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="depoimentos" className="relative py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <RevealOnScroll className="text-center mb-20">

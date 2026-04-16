@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative pt-32 pb-8 overflow-hidden">
+    <footer id="contato" className="relative pt-32 pb-8 overflow-hidden">
       {/* Top Divider with Gradient */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
