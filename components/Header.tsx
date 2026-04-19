@@ -5,6 +5,12 @@ import { useState, useEffect } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const navItems = [
+    { label: "Planos", href: "#planos" },
+    { label: "Sobre", href: "#sobre" },
+    { label: "Relatos Reais", href: "#relatos" },
+    { label: "Contacto", href: "#contacto" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,13 +43,13 @@ export default function Header() {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
-          {["Planos", "Sobre", "Depoimentos", "Contato"].map((item) => (
+          {navItems.map((item) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+              key={item.href}
+              href={item.href}
               className="text-white/60 hover:text-white text-sm font-medium transition-colors"
             >
-              {item}
+              {item.label}
             </a>
           ))}
         </nav>
@@ -55,7 +61,7 @@ export default function Header() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
-          Começar Agora
+          Começar agora
         </motion.a>
       </div>
     </motion.header>

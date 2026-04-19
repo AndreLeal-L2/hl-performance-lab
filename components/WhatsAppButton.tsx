@@ -9,7 +9,7 @@ export function getWhatsAppUrl(planName?: string) {
   let message = "Olá! Gostaria de saber mais sobre os planos da HL Performance Lab.";
   
   if (planName) {
-    message = `Olá! Tenho interesse no Plano ${planName} da HL Performance Lab. Gostaria de saber mais detalhes.`;
+    message = `Olá! Tenho interesse no plano ${planName} da HL Performance Lab. Gostaria de saber mais detalhes.`;
   }
   
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
@@ -31,7 +31,7 @@ export default function WhatsAppButton() {
       whileTap={{ scale: 0.95 }}
     >
       <MessageCircle className="w-5 h-5" />
-      <span className="hidden sm:inline text-sm">Fale Conosco</span>
+      <span className="hidden sm:inline text-sm">Fale connosco</span>
     </motion.a>
   );
 }

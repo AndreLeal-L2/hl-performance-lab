@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { ArrowDown, Play } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -55,8 +55,8 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Treinos personalizados para pessoas comuns que querem mudar de vida.
-          Sem atleta, sem competição — só você, sua constância e resultados reais.
+          Treinos personalizados para pessoas comuns que querem mudar de vida,
+          com acompanhamento em português, inglês ou espanhol.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -75,15 +75,6 @@ export default function Hero() {
             Ver Planos
             <ArrowDown className="w-5 h-5" />
           </motion.a>
-          
-          <motion.button
-            className="btn-cinematic glass-card px-8 py-4 rounded-full font-semibold text-lg inline-flex items-center gap-2 text-white/80 hover:text-white"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            <Play className="w-5 h-5" />
-            Assista ao Vídeo
-          </motion.button>
         </motion.div>
 
         {/* Stats */}

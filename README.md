@@ -21,10 +21,10 @@ One-Page de alta performance com estética cinematográfica high-end para a HL P
 ## Seções
 
 1. **Hero**: Título gradiente "Resultados de Leão, Constância de Pantera" com parallax
-2. **Logos**: Placeholders elegantes para marcas parceiras
+2. **Desconto Zumub**: Área dedicada ao código de desconto
 3. **Sobre**: Diferenciais com glassmorphism e parallax
 4. **Planos**: Cards de preços com efeitos visuais premium
-5. **Depoimentos**: Histórias de sucesso de atletas
+5. **Relatos Reais**: Histórias de sucesso de clientes
 6. **Footer**: CTA final e links
 
 ## Efeitos Visuais
@@ -83,7 +83,7 @@ O build estático é gerado na pasta `dist/`.
 - **Display**: Syne (títulos, peso bold)
 - **Body**: Inter (corpo, espaçamento elegante)
 
-## Contato
+## Contacto
 
 WhatsApp integrado com animação de pulsação para conversão de leads.
 

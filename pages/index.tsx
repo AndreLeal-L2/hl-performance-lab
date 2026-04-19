@@ -1,7 +1,7 @@
 import BlurryBlobs from "@/components/BlurryBlobs";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import LogosSection from "@/components/LogosSection";
+import ZumubDiscountSection from "@/components/ZumubDiscountSection";
 import AboutSection from "@/components/AboutSection";
 import PlansSection from "@/components/PlansSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -20,7 +20,7 @@ export default function Home() {
       {/* Main Content */}
       <div className="relative z-10">
         <Hero />
-        <LogosSection />
+        <ZumubDiscountSection />
         <AboutSection />
         <PlansSection />
         <TestimonialsSection />

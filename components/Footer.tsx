@@ -10,7 +10,7 @@ export default function Footer() {
   const socialLinks = [
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: Mail, href: "mailto:contato@hlperformance.com", label: "Email" },
+    { icon: Mail, href: "mailto:contacto@hlperformance.com", label: "Email" },
   ];
 
   const footerLinks = [
@@ -20,7 +20,7 @@ export default function Footer() {
     },
     {
       title: "Empresa",
-      links: ["Sobre", "Blog", "Carreiras", "Contato"],
+      links: ["Sobre", "Blog", "Carreiras", "Contacto"],
     },
     {
       title: "Legal",
@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contato" className="relative pt-32 pb-8 overflow-hidden">
+    <footer id="contacto" className="relative pt-32 pb-8 overflow-hidden">
       {/* Top Divider with Gradient */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
@@ -50,7 +50,7 @@ export default function Footer() {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            Comece Agora
+            Comece agora
           </motion.a>
         </RevealOnScroll>
 

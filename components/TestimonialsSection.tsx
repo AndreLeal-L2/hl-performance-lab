@@ -27,15 +27,15 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section id="depoimentos" className="relative py-32 overflow-hidden">
+    <section id="relatos" className="relative py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <RevealOnScroll className="text-center mb-20">
           <span className="text-[#A855F7] text-sm uppercase tracking-widest font-medium drop-shadow-sm">
-            Histórias Reais
+            Relatos reais
           </span>
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 tracking-tight">
-            Pessoas Comuns, Resultados Reais
+            Pessoas comuns, resultados reais
           </h2>
         </RevealOnScroll>
 

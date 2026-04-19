@@ -57,24 +57,17 @@ export default function AboutSection() {
             <RevealOnScroll delay={0.2}>
               <p className="text-white/60 mt-6 text-lg leading-relaxed">
                 O HL Performance Lab nasceu para pessoas como você: que querem 
-                mudar o corpo, ganhar saúde e autoconfiança — sem precisar ser 
-                atleta profissional.
+                mudar o corpo, ganhar saúde e autoconfiança sem precisar viver 
+                no ginásio.
               </p>
               <p className="text-white/60 mt-4 text-lg leading-relaxed">
                 Nosso método é feito para o dia a dia real. Sem treinos impossíveis, 
                 sem promessas absurdas. Só constância, método certo e resultados que 
                 você pode ver no espelho.
               </p>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={0.4}>
-              <motion.button
-                className="mt-8 btn-cinematic bg-transparent border border-white/20 hover:border-[#8A2BE2] text-white px-8 py-4 rounded-full font-semibold inline-flex items-center gap-2"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                Conheça Nossa História
-              </motion.button>
+              <p className="text-white/60 mt-4 text-lg leading-relaxed">
+                A consultoria pode ser feita em português, inglês ou espanhol.
+              </p>
             </RevealOnScroll>
           </div>
 

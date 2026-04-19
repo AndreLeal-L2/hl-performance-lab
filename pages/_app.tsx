@@ -7,8 +7,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>HL Performance Lab | Resultados de Leão, Constância de Pantera</title>
-        <meta name="description" content="Treinamento de elite para atletas de alta performance. Transforme seu potencial em resultados extraordinários." />
-        <meta name="keywords" content="treinamento, performance, atletas, fitness, hl performance lab" />
+        <meta name="description" content="Treinos personalizados para pessoas que querem mudar de vida com constância, acompanhamento e método certo." />
+        <meta name="keywords" content="treino personalizado, performance, fitness, consultoria, hl performance lab" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" sizes="64x64" href="/logobrowser.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logobrowser.png" />

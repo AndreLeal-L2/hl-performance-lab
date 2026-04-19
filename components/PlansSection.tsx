@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import GlassCard from "./GlassCard";
 import RevealOnScroll from "./RevealOnScroll";
-import { Check, Star, Zap, Crown, Users, Gift, Percent } from "lucide-react";
+import { Check, Star, Zap, Users, Gift, Percent } from "lucide-react";
 import { getWhatsAppUrl } from "./WhatsAppButton";
 
 const plans = [
@@ -29,28 +29,11 @@ const plans = [
     description: "Para quem quer resultados de verdade e mudar de vez o corpo.",
     features: [
       "Tudo do Iniciante",
-      "Consultoria nutricional",
       "Acompanhamento diário",
       "Análise de evolução",
       "Videochamadas mensais",
     ],
     popular: true,
-  },
-  {
-    icon: Crown,
-    name: "Mudança Total",
-    price: "€100",
-    period: "/mês",
-    description: "Experiência completa para quem quer transformação máxima.",
-    features: [
-      "Tudo do Transformação",
-      "Treino presencial incluso",
-      "Acompanhamento 24h",
-      "Análise de resultados",
-      "Kit HL Performance",
-      "Suporte prioritário",
-    ],
-    popular: false,
   },
 ];
 
@@ -73,7 +56,7 @@ export default function PlansSection() {
         </RevealOnScroll>
 
         {/* Plans Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <GlassCard
               key={index}
@@ -137,7 +120,7 @@ export default function PlansSection() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Começar Agora
+                Começar agora
               </motion.a>
             </GlassCard>
           ))}
