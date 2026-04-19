@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { MouseEvent, useState, useEffect } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -11,6 +11,21 @@ export default function Header() {
     { label: "Relatos Reais", href: "#relatos" },
     { label: "Contacto", href: "#contacto" },
   ];
+
+  const handleAnchorClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    const target = document.querySelector(href);
+
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.pushState(null, "", href);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,6 +62,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
+              onClick={(event) => handleAnchorClick(event, item.href)}
               className="text-white/60 hover:text-white text-sm font-medium transition-colors"
             >
               {item.label}
@@ -57,6 +73,7 @@ export default function Header() {
         {/* CTA Button */}
         <motion.a
           href="#planos"
+          onClick={(event) => handleAnchorClick(event, "#planos")}
           className="hidden sm:block bg-[#8A2BE2] hover:bg-[#7C3AED] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}

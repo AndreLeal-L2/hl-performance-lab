@@ -33,7 +33,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section id="sobre" ref={containerRef} className="relative py-32 overflow-hidden">
+    <section id="sobre" ref={containerRef} className="relative py-32 overflow-hidden scroll-mt-28">
       {/* Background Parallax Element */}
       <motion.div
         style={{ y: parallaxY }}

@@ -29,7 +29,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contacto" className="relative pt-32 pb-8 overflow-hidden">
+    <footer id="contacto" className="relative pt-32 pb-8 overflow-hidden scroll-mt-28">
+      <span id="contato" className="absolute -top-28" aria-hidden="true" />
       {/* Top Divider with Gradient */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 

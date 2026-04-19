@@ -39,7 +39,7 @@ const plans = [
 
 export default function PlansSection() {
   return (
-    <section id="planos" className="relative py-32 overflow-hidden">
+    <section id="planos" className="relative py-32 overflow-hidden scroll-mt-28">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <RevealOnScroll className="text-center mb-20">
