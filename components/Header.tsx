@@ -1,30 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MouseEvent, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const navItems = [
-    { label: "Planos", href: "#planos" },
-    { label: "Sobre", href: "#sobre" },
-    { label: "Relatos Reais", href: "#relatos" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Planos", targetId: "planos" },
+    { label: "Sobre", targetId: "sobre" },
+    { label: "Relatos Reais", targetId: "relatos" },
+    { label: "Contacto", targetId: "contacto" },
   ];
 
-  const handleAnchorClick = (
-    event: MouseEvent<HTMLAnchorElement>,
-    href: string
-  ) => {
-    const target = document.querySelector(href);
+  const scrollToSection = (targetId: string) => {
+    const target = document.getElementById(targetId);
 
     if (!target) {
       return;
     }
 
-    event.preventDefault();
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-    window.history.pushState(null, "", href);
+    const headerOffset = 112;
+    const targetTop =
+      target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+    window.scrollTo({ top: targetTop, behavior: "smooth" });
+    window.history.pushState(null, "", `#${targetId}`);
   };
 
   useEffect(() => {
@@ -59,27 +59,27 @@ export default function Header() {
         {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              onClick={(event) => handleAnchorClick(event, item.href)}
-              className="text-white/60 hover:text-white text-sm font-medium transition-colors"
+            <button
+              key={item.targetId}
+              type="button"
+              onClick={() => scrollToSection(item.targetId)}
+              className="text-white/60 hover:text-white text-sm font-medium transition-colors bg-transparent border-0 cursor-pointer"
             >
               {item.label}
-            </a>
+            </button>
           ))}
         </nav>
 
         {/* CTA Button */}
-        <motion.a
-          href="#planos"
-          onClick={(event) => handleAnchorClick(event, "#planos")}
+        <motion.button
+          type="button"
+          onClick={() => scrollToSection("planos")}
           className="hidden sm:block bg-[#8A2BE2] hover:bg-[#7C3AED] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-colors"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
         >
           Começar agora
-        </motion.a>
+        </motion.button>
       </div>
     </motion.header>
   );
