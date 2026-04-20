@@ -31,7 +31,7 @@ const plans = [
       "Tudo do Iniciante",
       "Acompanhamento diário",
       "Análise de evolução",
-      "Videochamadas mensais",
+      "Videochamadas mensais!",
     ],
     popular: true,
   },
