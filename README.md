@@ -1,15 +1,17 @@
 # HL Performance Lab
 
-One-Page de alta performance com estética cinematográfica high-end para a HL Performance Lab.
+One-page de alta performance para a HL Performance Lab, com foco em apresentacao premium, conversao via WhatsApp e experiencia visual cinematografica.
 
-## Características
+## Funcionalidades
 
-- **Estética Cinematográfica**: Film grain, blurry blobs roxos e glassmorphism
-- **Animações Premium**: Framer Motion com reveal, parallax e hover effects
-- **Performance Otimizada**: Build estático otimizado para carregamento rápido
-- **Design Responsivo**: Experiência imersiva em todos os dispositivos
+- Landing page responsiva.
+- Seccao hero com chamada principal.
+- Area dedicada a desconto Zumub.
+- Seccoes de apresentacao, planos e relatos reais.
+- CTA final com contacto via WhatsApp.
+- Animacoes, parallax e efeitos de hover.
 
-## Tecnologias
+## Stack
 
 - Next.js 12
 - React 17
@@ -18,27 +20,17 @@ One-Page de alta performance com estética cinematográfica high-end para a HL P
 - Framer Motion
 - Lucide Icons
 
-## Seções
-
-1. **Hero**: Título gradiente "Resultados de Leão, Constância de Pantera" com parallax
-2. **Desconto Zumub**: Área dedicada ao código de desconto
-3. **Sobre**: Diferenciais com glassmorphism e parallax
-4. **Planos**: Cards de preços com efeitos visuais premium
-5. **Relatos Reais**: Histórias de sucesso de clientes
-6. **Footer**: CTA final e links
-
-## Efeitos Visuais
-
-- **Film Grain**: Ruído sutil sobreposto ao background #030303
-- **Blurry Blobs**: Manchas de luz roxa (#8A2BE2) para profundidade 3D
-- **Glassmorphism**: Cards translúcidos com backdrop-blur
-- **Gradient Text**: Títulos com gradiente animado
-- **WhatsApp Pulse**: Botão com efeito de pulsação suave
-
 ## Desenvolvimento
+
+Instale dependencias:
 
 ```bash
 npm install
+```
+
+Inicie o ambiente local:
+
+```bash
 npm run dev
 ```
 
@@ -48,45 +40,27 @@ npm run dev
 npm run build
 ```
 
-O build estático é gerado na pasta `dist/`.
+O build estatico e gerado na pasta `dist/`.
 
-## Estrutura de Pastas
+## Estrutura
 
-```
-/
-├── components/          # Componentes React
-│   ├── BlurryBlobs.tsx
-│   ├── GlassCard.tsx
-│   ├── Hero.tsx
-│   ├── PlansSection.tsx
-│   └── ...
-├── pages/              # Páginas Next.js
-│   ├── _app.tsx
-│   ├── index.tsx
-│   └── globals.css
-├── public/             # Assets estáticos
-├── dist/               # Build de produção
-├── tailwind.config.ts  # Config Tailwind
-└── next.config.js      # Config Next.js
+```text
+components/          Componentes React reutilizaveis
+pages/               Paginas Next.js e estilos globais
+public/              Assets estaticos
+dist/                Build de producao
+next.config.js       Configuracao do Next.js
+tailwind.config.ts   Configuracao do Tailwind CSS
 ```
 
-## Cores
+## Identidade Visual
 
-- **Background**: #030303
-- **Primária**: #8A2BE2 (roxo vibrante)
-- **Glow**: #A855F7 (roxo claro)
-- **Texto**: #ffffff
-- **Texto Secundário**: rgba(255, 255, 255, 0.6)
+- Background escuro.
+- Destaques em roxo.
+- Cards com glassmorphism.
+- Tipografia principal: Syne.
+- Tipografia de corpo: Inter.
 
-## Fontes
+## Deploy
 
-- **Display**: Syne (títulos, peso bold)
-- **Body**: Inter (corpo, espaçamento elegante)
-
-## Contacto
-
-WhatsApp integrado com animação de pulsação para conversão de leads.
-
----
-
-© 2024 HL Performance Lab. Todos os direitos reservados.
+Gere o build de producao e publique a pasta estatica conforme a plataforma escolhida.
