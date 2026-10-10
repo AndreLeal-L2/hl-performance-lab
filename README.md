@@ -1,15 +1,15 @@
 # HL Performance Lab
 
-One-page de alta performance para a HL Performance Lab, com foco em apresentacao premium, conversao via WhatsApp e experiencia visual cinematografica.
+High-performance one-page website for HL Performance Lab, focused on a premium presentation, WhatsApp conversion, and a cinematic visual experience.
 
-## Funcionalidades
+## Features
 
-- Landing page responsiva.
-- Seccao hero com chamada principal.
-- Area dedicada a desconto Zumub.
-- Seccoes de apresentacao, planos e relatos reais.
-- CTA final com contacto via WhatsApp.
-- Animacoes, parallax e efeitos de hover.
+- Responsive landing page.
+- Hero section with the main call to action.
+- Dedicated Zumub discount area.
+- Presentation, plans, and real testimonial sections.
+- Final CTA with WhatsApp contact.
+- Animations, parallax, and hover effects.
 
 ## Stack
 
@@ -20,15 +20,15 @@ One-page de alta performance para a HL Performance Lab, com foco em apresentacao
 - Framer Motion
 - Lucide Icons
 
-## Desenvolvimento
+## Development
 
-Instale dependencias:
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Inicie o ambiente local:
+Start the local environment:
 
 ```bash
 npm run dev
@@ -40,27 +40,27 @@ npm run dev
 npm run build
 ```
 
-O build estatico e gerado na pasta `dist/`.
+The static build is generated in the `dist/` folder.
 
-## Estrutura
+## Structure
 
 ```text
-components/          Componentes React reutilizaveis
-pages/               Paginas Next.js e estilos globais
-public/              Assets estaticos
-dist/                Build de producao
-next.config.js       Configuracao do Next.js
-tailwind.config.ts   Configuracao do Tailwind CSS
+components/          Reusable React components
+pages/               Next.js pages and global styles
+public/              Static assets
+dist/                Production build
+next.config.js       Next.js configuration
+tailwind.config.ts   Tailwind CSS configuration
 ```
 
-## Identidade Visual
+## Visual Identity
 
-- Background escuro.
-- Destaques em roxo.
-- Cards com glassmorphism.
-- Tipografia principal: Syne.
-- Tipografia de corpo: Inter.
+- Dark background.
+- Purple highlights.
+- Glassmorphism cards.
+- Primary typeface: Syne.
+- Body typeface: Inter.
 
 ## Deploy
 
-Gere o build de producao e publique a pasta estatica conforme a plataforma escolhida.
+Generate the production build and publish the static folder according to the chosen platform.
